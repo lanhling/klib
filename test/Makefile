@@ -51,7 +51,7 @@ kvec_test:kvec_test.cc ../kvec.h
 		$(CXX) $(CXXFLAGS) -o $@ kvec_test.cc
 
 kmin_test:kmin_test.c ../kmath.h ../kmath.c
-		$(CC) $(CFLAGS) -o $@ kmin_test.c ../kmath.c
+		$(CC) $(CFLAGS) -o $@ kmin_test.c ../kmath.c -lm
 
 kstring_bench:kstring_bench.c ../kstring.h ../kstring.c
 		$(CC) $(CFLAGS) -o $@ kstring_bench.c ../kstring.c
